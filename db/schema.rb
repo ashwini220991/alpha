@@ -12,13 +12,6 @@
 
 ActiveRecord::Schema.define(version: 2020_09_13_083750) do
 
-  create_table "author_book", force: :cascade do |t|
-    t.integer "author_id"
-    t.integer "book_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "author_books", force: :cascade do |t|
     t.integer "author_id"
     t.integer "book_id"

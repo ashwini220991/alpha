@@ -7,7 +7,8 @@
 
 <p>
   <strong>Authors Name:</strong>
-  <%= @book.authors.pluck(:first_name,:last_name).join(', ') %>
+  <%= @book.authors.pluck(:first_name, :last_name).join(' ') %>
+
 </p>
 
 <%= link_to 'Edit', edit_book_path(@book) %> |
